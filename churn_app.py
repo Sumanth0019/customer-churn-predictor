@@ -133,7 +133,7 @@ def login_page():
 
     result = oauth2.authorize_button(
         name="🔵 Continue with Google",
-        redirect_uri="https://customer-churn-predictions1.streamlit.app/",
+        redirect_uri="https://customer-churn-predictions1.streamlit.app/component/streamlit_oauth.authorize_button",
         scope="openid email profile",
         key="google",
     )
