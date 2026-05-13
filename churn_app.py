@@ -118,8 +118,8 @@ def login_page():
     st.markdown("---")
     st.markdown("### Continue with Google")
 
-    CLIENT_ID = "186629050924-s6eq75jh1uecmd89h3di2kogei3a20e7.apps.googleusercontent.com"
-    CLIENT_SECRET = "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"
+    CLIENT_ID = st.secrets["GOOGLE_CLIENT_ID"]
+    CLIENT_SECRET = st.secrets["GOOGLE_CLIENT_SECRET"]
 
     AUTHORIZE_URL = "https://accounts.google.com/o/oauth2/auth"
     TOKEN_URL = "https://oauth2.googleapis.com/token"
