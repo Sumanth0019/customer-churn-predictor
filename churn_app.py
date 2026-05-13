@@ -136,7 +136,7 @@ def login_page():
         redirect_uri="https://customer-churn-predictions1.streamlit.app/component/streamlit_oauth.authorize_button",
         scope="openid email profile",
         key="google",
-    )
+)
 
     if result:
 
